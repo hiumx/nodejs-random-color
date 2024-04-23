@@ -9,7 +9,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'docker build -t nodejs-random-color:v__${BUILD_ID} .'
+                sh 'docker build -t nodejs-random-color-hiumx:v__${BUILD_ID} .'
             }
         }
         stage('Upload image to ECR') {
